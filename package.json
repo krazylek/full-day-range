@@ -1,0 +1,24 @@
+{
+  "name": "full-day-range",
+  "version": "0.0.0",
+  "description": "Given a date, provide a full day range, or custom subset. Timezone aware.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": "krazylek (http://pohl.fr)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krazylek/full-day-range.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krazylek/full-day-range/issues"
+  },
+  "dependencies": {
+    "shift-timezone-offset": "^0.0.2"
+  },
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}
