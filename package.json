@@ -16,7 +16,7 @@
     "url": "https://github.com/krazylek/full-day-range/issues"
   },
   "dependencies": {
-    "shift-timezone-offset": "^0.0.2"
+    "shift-timezone-offset": "^0.0.3"
   },
   "devDependencies": {
     "tape": "^4.8.0"

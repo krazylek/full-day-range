@@ -117,7 +117,7 @@ var dayRange = require('full-day-range')
 
 Return an array of two dates, starting at `dayDate 00:00:00.000` to `dayDate +1 00:00:00.000`.
 
-* `dayDate` - day for the range.
+* `dayDate` - any valid value for the `Date` constructor. This is the base date for the range.
 * `optse` - the date range to be trimmed to fit inside the provided day. Hqave to be ordered: `[startDate, endDate]`.
 * `opts.timezone` - Valid ISO 8601 date string or timezone string. Change the timezone to work with. 
 * `opts.range` - Default is `[0, 24*60*60*1000]`. Array of milliseconds to offset the range: `[startMs, endMs]`.

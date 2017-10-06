@@ -11,6 +11,15 @@ test('valid local day range', function (t) {
   t.end()
 })
 
+test('day could be a timestamp', function (t) {
+  var day = new Date(2017,0,1,12).getTime()
+  var expectedStart = new Date('2017-01-01T00:00:00')
+  var expectedEnd = new Date('2017-01-02T00:00:00')
+
+  t.deepEqual(dayInterval(day), [expectedStart, expectedEnd])
+  t.end()
+})
+
 test('alt timezone day range', function (t) {
   var timezoneISODateString = '2017-01-01T12:00:00+05:00'
   var day = new Date(timezoneISODateString)

@@ -22,7 +22,7 @@ var defaults = {
 module.exports = function(day, options) {
   options = options || defaults
   var localTime = options.localTime || defaults.localTime
-  var timezone = options.timezone || day
+  var timezone = options.timezone || (typeof day == 'string' ? day : null)
   options.range = options.range || defaults.range
   var start = options.range[0] || defaults.range[0]
   var end = options.range[1] || defaults.range[1]
