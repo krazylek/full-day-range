@@ -4,7 +4,7 @@
   "description": "Given a date, provide a full day range, or custom subset. Timezone aware.",
   "main": "index.js",
   "scripts": {
-    "test": "tape test/*.js"
+    "test": "standard && tape test/*.js"
   },
   "author": "krazylek (http://pohl.fr)",
   "license": "MIT",
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "parse-time-to-ms": "0.0.1",
+    "standard": "^10.0.3",
     "tape": "^4.8.0"
   }
 }

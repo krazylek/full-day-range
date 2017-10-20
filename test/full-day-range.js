@@ -3,7 +3,7 @@ var parseTime = require('parse-time-to-ms')
 var test = require('tape')
 
 test('valid local day range', function (t) {
-  var day = new Date(2017,0,1,12)
+  var day = new Date(2017, 0, 1, 12)
   var expectedStart = new Date('2017-01-01T00:00:00')
   var expectedEnd = new Date('2017-01-02T00:00:00')
 
@@ -12,7 +12,7 @@ test('valid local day range', function (t) {
 })
 
 test('day could be a timestamp', function (t) {
-  var day = new Date(2017,0,1,12).getTime()
+  var day = new Date(2017, 0, 1, 12).getTime()
   var expectedStart = new Date('2017-01-01T00:00:00')
   var expectedEnd = new Date('2017-01-02T00:00:00')
 
@@ -72,7 +72,6 @@ test('custom start time only', function (t) {
   t.end()
 })
 
-
 test('custom day range in alt timezone time', function (t) {
   var timezoneISODateString = '2017-01-01T12:00:00+08:00'
   var day = new Date(timezoneISODateString)
@@ -84,7 +83,6 @@ test('custom day range in alt timezone time', function (t) {
   t.deepEqual(dayInterval(timezoneISODateString, { range: timeRange }), [expectedStart, expectedEnd])
   t.end()
 })
-
 
 test('all together: custom day range converted to local', function (t) {
   var timezoneISODateString = '2017-01-01T17:00:00-08:00'
