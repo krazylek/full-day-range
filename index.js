@@ -8,7 +8,7 @@ var defaults = {
 }
 
 /**
- * Trim a date range to a specific day
+ * create range for a full day
  *
  * @param {Date|string} - Date to get range
  * @param {object} options

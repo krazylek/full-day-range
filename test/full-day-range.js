@@ -1,5 +1,5 @@
 var dayInterval = require('../')
-var parseTime = require('../parse-time')
+var parseTime = require('parse-time-to-ms')
 var test = require('tape')
 
 test('valid local day range', function (t) {
