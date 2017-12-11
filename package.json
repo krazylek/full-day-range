@@ -19,7 +19,7 @@
     "shift-timezone-offset": "^0.0.3"
   },
   "devDependencies": {
-    "parse-time-to-ms": "0.0.1",
+    "parse-time-to-ms": "^1.0.0",
     "standard": "^10.0.3",
     "tape": "^4.8.0"
   }
