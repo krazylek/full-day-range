@@ -99,3 +99,13 @@ test('all together: custom day range converted to local', function (t) {
   t.deepEqual(dayInterval(timezoneISODateString, { range: timeRange, localTime: true }), [expectedStartLocal, expectedEndLocal])
   t.end()
 })
+
+test('custom range with end smaller than start should finish next day', function (t) {
+  var day = new Date(2017, 0, 1, 12)
+  var range = [parseTime('18:00'), parseTime('06:30')]
+  var expectedStart = new Date('2017-01-01T18:00:00')
+  var expectedEnd = new Date('2017-01-02T06:30:00')
+
+  t.deepEqual(dayInterval(day, { range }), [expectedStart, expectedEnd])
+  t.end()
+})
